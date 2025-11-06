@@ -16,6 +16,7 @@ import { Calendar, ChatDots, Copyright } from 'phosphor-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
+// @ts-ignore
 const MotionImg = motion<ImgProps>(Img);
 
 function ImagePost({
@@ -32,6 +33,7 @@ function ImagePost({
   const iconColor = useColorModeValue(`gray.600`, `gray.500`);
 
   return (
+    // @ts-ignore
     <VStack as="article" borderWidth="1px" bg={bg} p={4}>
       <MotionImg
         src={src}

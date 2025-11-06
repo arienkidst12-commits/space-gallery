@@ -7,7 +7,9 @@ function LayoutTemplate({
   const bg = useColorModeValue(`gray.50`, `gray.900`);
 
   return (
+    // @ts-ignore
     <Flex
+      // @ts-expect-error ChakraUI and TypeScript conflict
       flexDir="column"
       justifyContent="space-between"
       bg={bg}

@@ -5,6 +5,7 @@ import { Button, Icon } from '@chakra-ui/react';
 function BackHeader() {
   return (
     <NextLink href="/" passHref legacyBehavior>
+      {/* @ts-ignore */}
       <Button
         as="a"
         aria-label="Go back to gallery"

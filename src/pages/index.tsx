@@ -45,6 +45,7 @@ export default function Home({ images }: HomeProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      {/* @ts-ignore ChakraUI and TypeScript conflict */}
       <Container as="main" maxW="100rem" mt={4}>
         <Header />
         <Gallery images={images} />

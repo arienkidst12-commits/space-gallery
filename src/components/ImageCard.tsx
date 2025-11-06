@@ -20,7 +20,9 @@ import { useState, useEffect, useContext } from 'react';
 import MediaTypeTag from './MediaTypeTag';
 
 const MotionBox = motion<BoxProps>(Box);
+// @ts-ignore
 const MotionImg = motion<ImgProps>(Img);
+// @ts-ignore
 const MotionIconButton = motion<IconButtonProps>(IconButton);
 
 function ImageCard({ src, title, date, mediaType }: ImageCardProps) {
@@ -43,6 +45,7 @@ function ImageCard({ src, title, date, mediaType }: ImageCardProps) {
   };
 
   return (
+    // @ts-ignore
     <Flex
       as="article"
       flexDir="column"
