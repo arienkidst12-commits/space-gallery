@@ -30,7 +30,7 @@
     "react-query": "^3.39.3"
   },
   "devDependencies": {
-    "@types/node": "18.15.0",
+    "@types/node": "^22.19.0",
     "@types/react": "^18.0.28",
     "@typescript-eslint/eslint-plugin": "^5.9.0",
     "@typescript-eslint/parser": "^5.9.0",
