@@ -17,14 +17,17 @@ export async function getStaticProps() {
   } catch (error) {
     // NASA api error
     console.error(error);
-    return { notFound: true };
+    return { props: { images: [] }, revalidate: 10 };
   }
 }
 
 export default function Home({ images }: HomeProps) {
   // only two types, if it's not a video then it's an image
-  const src =
-    images[0].media_type === `video` ? images[0].thumbnail_url : images[0].url;
+  const src = images[0]
+    ? images[0].media_type === `video`
+      ? images[0].thumbnail_url
+      : images[0].url
+    : undefined;
   const title = formatTitle(`Home`);
 
   return (

@@ -20,6 +20,10 @@ function Gallery({ images }: GalleryProps) {
     { keepPreviousData: true, initialData: images, enabled: page !== 1 },
   );
 
+  if (images.length === 0 && page === 1) {
+    return <Text textAlign="center">No images found!</Text>;
+  }
+
   if (isLoading) {
     return <LoadingIndicator />;
   }
